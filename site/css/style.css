@@ -58,7 +58,10 @@ header, main, footer{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: cornflowerblue;
+    background-image: url('../images/bg-way01.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
 }
@@ -95,33 +98,55 @@ header, main, footer{
 /*========== MENU ==========*/
 nav{
     background-color: var(--corprincipal);
-    width: 100%;
-    height: 60px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
-.menu{
-    display: inline-block;
+nav ul{
+    list-style: none;
+    margin-top: 2%;
 }
 
-.menulink{
-    text-decoration: none;
+nav ul li{
+    background-color: var(--corprincipal);
     color: var(--corfundo);
-    background-color: var(--corsecundaria);
-    border-radius: 9px;
-    font-family: var(--fontemenu);
-    font-size: 1.3em;
-    padding: 7px 15px;
+    width: 110px;
+    border:  1px solid var(--corfundo);
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    float: left;
+    position: relative;
+    /*font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold; */
+    transition: .4s;
 }
 
-.menulink:hover{
-    color: var(--corfundo);
+nav ul li:hover{
     background-color: var(--cordestaque);
+    transition: .4s;
+}
+
+nav ul ul{
+    display: none;
+    margin: 0px;
+}
+
+nav ul li:hover>ul{
+    display: block;
+    transition: .4s;
+}
+
+nav ul ul ul{
+    margin-left: 110px;
+    top: 15px;
+    position: absolute;
 }
 
 /*========== MAIN =========*/
 main{
-    margin-top: 30px;
+    margin-top: 300px;
 }
