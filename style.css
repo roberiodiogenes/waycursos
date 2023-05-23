@@ -1,0 +1,328 @@
+/*Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*font-family: 'Montserrat', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*font-family: 'Barlow', sans-serif;*/
+
+/*Monoespaçada*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap'); /*font-family: 'Inconsolata', monospace;*/
+
+/*Diplay*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap'); /*font-family: 'Comfortaa', cursive;*/
+
+:root{
+    --fontepadrao: 'Inconsolata', monospace;
+    --fontemenu: 'Montserrat', sans-serif;
+    --fontetitulos: 'Comfortaa', cursive;
+    --corfundo: #FFF;
+    --corprincipal: #FFF;
+    --corsecundaria: #e2e2e2;
+    --corfonte: #5c5c5c;
+    --corlinks: #727272;
+    --corlinkshouver: #be5213;
+    --cordestaques: #ff6200;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontepadrao);
+}
+
+body{
+    color: var(--corfonte);
+}
+
+header, main, footer{
+    max-width: 1080px;
+    min-width: 200px;
+    margin: auto;
+    padding: 20px;
+}
+
+main{
+    margin-top: -50px;
+}
+
+nav{
+    width: 65%;
+}
+
+h2{
+    font-family: var(--fontetitulos);
+    font-size: 2em;
+    color: var(--cordestaques);
+    word-wrap: break-word;
+    padding-top: 20px;
+}
+
+h3{
+    font-family: var(--fontetitulos);
+    font-size: 1.5em;
+    color: var(--cordestaques);
+    word-wrap: break-word;
+    padding-top: 15px;
+}
+
+p{
+    padding-top: 20px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+ol{
+    padding-left: 50px;
+    color: var(--cordestaques);
+}
+
+li{
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+span{
+    font-weight: bolder;
+    color: var(--cordestaques);
+}
+/* IDs */
+#topo{
+    background-color: var(--corprincipal);
+    display: flex;
+}
+
+#sociais{
+    width: 85px;
+    margin-left: auto;
+}
+
+#capa{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    background-image: url('capa.jpg');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#capa>h1{
+    color: var(--corfundo);
+    font-size: 3em;
+}
+
+#fotoperfil{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 20px;
+    top: -60px;
+    border: solid 1px var(--corfonte);
+}
+
+#colunas{
+    padding-top: 20px;
+    column-count: 2;
+    column-gap: 15px;
+}
+
+@media screen  and (max-width: 480px){
+    #colunas{
+        columns: 1;
+    }
+}
+
+.menu{
+    text-decoration: none;
+    color: var(--corlinks);
+    font-family: var(--fontemenu);
+    transition: .3s;
+    margin-right: 10px;
+}
+
+.menu:hover{
+    color: var(--corlinkshouver);
+    text-decoration: underline;
+    transition: .3s;
+}
+.sociais{
+    width: 23px;
+    filter: grayscale(1);
+    transition: .3s;
+}
+
+.sociais:hover{
+    filter: grayscale(0);
+    transition: .3s;
+}
+
+.fotoscomuns{
+    width: 100%;
+    padding-top: 15px;
+    box-shadow: 2px 2px 4px var(--corfonte);
+}
+
+.sub{
+    position: relative;
+    top: -20px;
+    font-style: italic;
+}
+
+/*GALERIA*/
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.galeria {
+    width: 200px;
+    height: 120px;
+    filter: grayscale(.9) blur(2px);
+    object-fit: cover;
+    margin: 5px;
+    cursor: pointer;
+    transition: .4s;
+  }
+
+.galeria:hover{
+    width: 200px;
+    height: auto;
+    filter: grayscale(0);
+    transition: .4s;
+=======
+/*Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*font-family: 'Montserrat', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*font-family: 'Barlow', sans-serif;*/
+
+/*Monoespaçada*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap'); /*font-family: 'Inconsolata', monospace;*/
+
+/*Diplay*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap'); /*font-family: 'Comfortaa', cursive;*/
+
+:root{
+    --fontepadrao: 'Inconsolata', monospace;
+    --fontemenu: 'Montserrat', sans-serif;
+    --fontetitulos: 'Comfortaa', cursive;
+    --corfundo: #FFF;
+    --corprincipal: #FFF;
+    --corsecundaria: #e2e2e2;
+    --corfonte: #5c5c5c;
+    --corlinks: #727272;
+    --corlinkshouver: #be5213;
+    --cordestaques: #ff6200;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontepadrao);
+}
+
+body{
+    color: var(--corfonte);
+}
+
+header, main, footer{
+    max-width: 1080px;
+    min-width: 200px;
+    margin: auto;
+    padding: 20px;
+}
+
+main{
+    margin-top: -50px;
+    column-count: 2;
+    column-gap: 15px;
+}
+
+nav{
+    width: 65%;
+}
+
+h2{
+    font-family: var(--fontetitulos);
+    font-size: 2em;
+    color: var(--cordestaques);
+    word-wrap: break-word;
+}
+
+p{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+span{
+    font-weight: bolder;
+    color: var(--cordestaques);
+}
+/* IDs */
+#topo{
+    background-color: var(--corprincipal);
+    display: flex;
+}
+
+#sociais{
+    width: 85px;
+    margin-left: auto;
+}
+
+#capa{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    background-image: url('capa.jpg');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#capa>h1{
+    color: var(--corfundo);
+    font-size: 3em;
+}
+
+#fotoperfil{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 20px;
+    top: -60px;
+    border: solid 1px var(--corfonte);
+}
+
+.menu{
+    text-decoration: none;
+    color: var(--corlinks);
+    font-family: var(--fontemenu);
+    transition: .3s;
+}
+
+.menu:hover{
+    color: var(--corlinkshouver);
+    text-decoration: underline;
+    transition: .3s;
+}
+.sociais{
+    width: 23px;
+    filter: grayscale(1);
+    transition: .3s;
+}
+
+.sociais:hover{
+    filter: grayscale(0);
+    transition: .3s;
+}
+
+.fotoscomuns{
+    width: 100%;
+    padding-top: 15px;
+    box-shadow: 2px 2px 4px var(--corfonte);
+>>>>>>> df90d0498fcb42126ce2cfb55f311a6f8e4259cf
+}
